@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="css/firstp.css"> -->
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo/LOGO.png" alt="expressfood">
+        </div>
+        <ul>
+            <li class="item"><a href="">Home</a></li>
+            <li class="item"><a href="">Services</a></li>
+            <li class="item"><a href="">About us</a></li>
+            <li class="item"><a href="">Contact us</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary"> welcome to Praveen Enterprises </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde optio velit consequuntur quis </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisic </p>
+        <button class="btn">Order now</button>
+    </section>
+    <section class="services-container">
+   <h1 class="h-primary center">
+
+    
+
+   </h1>
+            
+           
+        
+        <div id="services">
+            <div class="box">
+              <a href="new2.html">
+                <img src="imeges/bike engine.png" class="servicing" alt="">
+                <h2 class="h-secondry center"> Our Services</h2>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto rem cum magnam,
+                    eius sunt debitis tempore cupiditate laudantium accusamus soluta.</p>
+              </a>
+            </div>
+            <div class="box">
+          <a href="#">
+            <img src="imeges/delivery_logo.png" class="servicing" alt="">
+            <h2 class="h-secondry center"> Express Delivery</h2>
+            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quaerat
+                consequatur at ullam veniam
+                ea, quibusdam minima? Eius soluta beatae</p>
+          </a>
+            </div>
+            <div class="box">
+             <a href="#">
+                <img src="imeges/delivery_logo.png" class="servicing" alt="">
+                <h2 class="h-secondry center">Contact Us </h2>
+                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quaerat
+                    consequatur at ullam veniam
+                    ea, quibusdam minima? Eius soluta beatae</p>
+             </a>
+            </div>
+        </div>
+    </section>
+    <section id="client-section">
+        <h1 class="h-primery center">Our clients</h1>
+        <div id="clients">
+            <div class="clint-item">
+                <img src="logo/CEAT.png" class="img" alt="Our clients">
+            </div>
+            <div class="clint-item">
+                <img src="logo/MRF .png" class="img" alt="Our clients">
+            </div>
+            <div class="clint-item">
+                <img src="logo/Apollo.png" class="img" alt="Our clients">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h-primary1 center">Contact</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="formgroup">
+                    <label for="name">name:</label>
+                    <input type="text" name="name" id="name" placeholder="enter your name"> 
+                </div>
+                <div class="formgroup">
+                    <label for="name">email:</label>
+                    <input type="text" name="name" id="email" placeholder="enter youremail"> 
+                </div>              
+                <div class="formgroup">
+                    <label for="name">massage</label>
+                    <textarea name="massage" id="" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            copyright &copy; praveenenterprices@gmail.com
+        </div>
+    </footer>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+
+</html>
